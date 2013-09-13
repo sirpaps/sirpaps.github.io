@@ -1,8 +1,4 @@
-/* @group TYPOGRAPHY
-----------------------------------------------------------------------------------------------------*/
 
-/* @group -GLOBAL
-------------------------------------------------------------------------------------------*/
 html { font-size: 100.01%; }
 body,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,hr { margin: 0; padding: 0; }
 
@@ -31,13 +27,12 @@ body {
 #home .entry-meta {
 	color: #FFF;
 }
-/* @end -global */
 
 
-/* @group -HEADINGS
+
+/* HEADINGS
 ------------------------------------------------------------------------------------------*/
 
-/* GLOBAL */
 h1,h2,h3,h4,h5,h6 {
 	color: #F90;
 	font-family: CodeBoldRegular, Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
@@ -96,9 +91,6 @@ h4, h5, h6 {
 	padding-left: 45px;
 }
 
-.petition h2	{ background: url("../img/number-01.png") no-repeat; }
-.donate h2		{ background: url("../img/number-02.png") no-repeat; }
-.share h2		{ background: url("../img/number-03.png") no-repeat; }
 
 /* ORANGE BLOCK TITLE */
 .header,
@@ -121,10 +113,7 @@ h4, h5, h6 {
 
 #main .content h2:first-child { margin-top: 0; }
 
-#petition .content h2 {
-	margin-left: -10px;
-	margin-right: 20px;
-}
+
 
 .page .entry-title {
 	margin-bottom: 10px;
@@ -146,14 +135,6 @@ h4, h5, h6 {
 	background-color: #FF5400;
 }
 
-.tiger .header,
-.map .header
-/*#petition .content h2*/ {
-	margin: 0;
-	position:absolute;
-	top: 15px;
-	left: -10px;
-}
 
 .ie7 #main .content h2 { height: auto; }
 
@@ -163,7 +144,7 @@ h4, h5, h6 {
 	text-decoration: line-through;
 }
 
-/* VARIOUS */
+
 #home .entry-title { margin-bottom: 0; }
 
 .entry-meta { font-style: italic; }
@@ -194,33 +175,22 @@ h4, h5, h6 {
 	margin: 0;
 	padding: 3px 10px 10px;
 }
-/* @end -headings */
 
-
-/* @group -LINKS
-------------------------------------------------------------------------------------------*/
 a:link, a:visited {
 	color: #FF5400;
 }
 
-#intro .primary a:link,
-#intro .primary a:visited,
+
 #home .entry-title a:link,
 #home .entry-title a:visited,
 #home .entry-content a:link,
 #home .entry-content a:visited,
-#sidebar a:link,
-#sidebar a:visited {
+ {
 	border-bottom: 1px solid #F90;
 	color: #F90;
 	text-decoration: none;
 }
 
-a.pdf {
-	background: url("../img/pdf.gif") no-repeat 5px center;
-	color: #EE0319;
-	padding-left: 25px;
-}
 
 a:hover,
 a:focus,
@@ -232,11 +202,7 @@ a:active {
 :focus {
 	outline: none;
 }
-/* @end links */
 
-
-/* @group -TEXT ELEMENTS
-------------------------------------------------------------------------------------------*/
 p, ul, ol { margin-bottom: 20px; }
 
 abbr {
@@ -249,238 +215,7 @@ ul, ol { padding-left: 15px; }
 ul { list-style: square; list-style-image: url("../img/bullet.gif"); }
 ol { list-style: decimal; }
 
-#petition ul,
-#petition ol { padding-left: 35px; }
 
-blockquote {
-	border-left: 3px solid #F90;
-	font-style: italic;
-	padding-left: 7px;
-}
-
-em, q { font-style: italic; }
-
-strong,
-.tiger ul em {
-	font-weight: bold;
-}
-/* @end -text elements */
-
-/* @end typography */
-
-
-/* @group HELPERS
-----------------------------------------------------------------------------------------------------*/
-
-/* @group -FIGURES
-------------------------------------------------------------------------------------------*/
-img {
-	border: 0;
-	max-width: 100%;
-	vertical-align: bottom;
-}
-
-.ie6 img { width: 100%; }
-
-.figure,
-.figure img,
-.figure .figcaption { background: #CBC5AB; }
-
-.figure {
-	border-bottom: 1px solid #A7A28C;
-	padding: 7px;
-	width: 100%;
-}
-
-.ie6 .figure { margin-right: -14px; }
-
-.content .figure,
-./*hentry*/ .figure {
-	margin-bottom: 20px;
-	margin-top: 8px;
-	width: 50.8%;
-}
-
-./*hentry*/ .figure { width: 49.15%; }
-
-.map .figure,
-.tiger .figure {
-	position: relative;
-	top: -20px;
-}
-
-#pourquoi .content .figure { margin-top:-138px; }
-
-.content .small,
-./*hentry*/ .small { width: 33.8%; }
-
-.figure img {
-	border-top: 1px solid #A7A28C;
-	display: block;
-}
-
-.figure .figcaption {
-	color: #1C1B17;
-	font-size: 12px;
-	font-style: italic;
-	margin: 0;
-	padding: 7px 0 3px;
-	text-align: center;
-	width: auto !important;
-}
-
-.push-right {
-	display: inline;
-	float: right;
-	margin-right: -50.8%;
-	position: relative;
-	right: -60px;
-}
-
-.ie7 .push-right { right: -50px; }
-
-.ie6 .push-right { margin-right: -300px; right: -60px; }
-
-.push-left {
-	display: inline;
-	float: left;
-	margin-left: -30px;
-	margin-right: 20px;
-}
-
-.ie6 .push-left {
-	margin-left: -30px;
-	margin-right: 20px;
-	position: relative;
-}
-/* @end -figures */
-
-
-/* @group -FORMS
-------------------------------------------------------------------------------------------*/
-fieldset {
-	background: #D9D4BE;
-	border: 0;
-	border-bottom: 1px solid #A7A28C;
-	color: #221;
-	padding: 15px;
-	position: relative;
-	top: 0;
-	right: -15px;
-}
-
-fieldset ul { list-style: none; margin: 0; padding: 0 !important; }
-
-fieldset li {
-	margin-bottom: 10px;
-	overflow: hidden;
-	width: 100%;
-}
-
-label,
-input[type="submit"] {
-	display: block;
-	font-family: CodeBoldRegular, Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-	font-weight: normal;
-	letter-spacing: 1px;
-}
-
-label { padding-left: 2px; }
-
-#newsletter { line-height: 30px; }
-
-#newsletter label {
-	display: inline;
-	float: right;
-	font-size: 12px;
-}
-
-#newsletter input {
-	display: inline;
-	float: left;
-	height: 30px;
-	margin-right: 5px;
-	position: relative;
-	top: -2px;
-	width: 15px;
-}
-
-input, button, textarea, select, optgroup, option {
-	font-family: Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-	font-size: inherit;
-	font-style: inherit;
-	font-weight: inherit;
-}
-
-select, textarea, input.text {
-	background: #FFF;
-	border: 5px solid #CBC5AB;
-	font-size: 16px;
-	height: 40px;
-	line-height: 20px;
-	padding: 5px;
-	width: 100%;
-	-moz-box-sizing: border-box;
-	-khtml-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-	-webkit-appearance: none;
-}
-
-.ie6 select, .ie7 select,
-.ie6 textarea, .ie7 textarea,
-.ie6 input.text, .ie7 input.text {
-	height: 20px;
-	width: 90%;
-}
-
-.ie6 select, .ie7 select {
-	height: 30px;
-	width: 50%;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	textarea {
-		resize: none;
-	}
-	
-	select {
-		background: #FFF url("../img/select.gif") no-repeat right center;
-	}
-}
-
-select:focus, textarea:focus, input.text:focus {
-	background: #FFF;
-	border-color: #F90;
-	outline: 0 none;
-}
-
-input[type="submit"] {
-	background: #F90;
-	border: 0 none;
-	color: #FFF;
-	cursor: pointer;
-	font-size: 16px;
-	height: 40px;
-	line-height: 40px;
-	width: 100%;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-	-webkit-appearance: none;
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:focus { background: #FF5400; }
-/* @end -forms */
-
-/* @group -MESSAGES
-------------------------------------------------------------------------------------------*/
-.message	{ padding: 0 20px 20px 20px; }
-.error		{ color: #EE0319; }
-.success	{ color: #336600; }
-/* @end -messages */
 
 .congratulation {
 	background: #15110C/* #FFBB55 */;
@@ -491,15 +226,6 @@ input[type="submit"]:focus { background: #FF5400; }
 	line-height: 25px;
 	padding: 10px;
 }
-
-/* @end helpers */
-
-
-/* @group LAYOUT
-----------------------------------------------------------------------------------------------------*/
-
-/* @group -GLOBAL
-------------------------------------------------------------------------------------------*/
 
 /* CONTAINER */
 .container {
@@ -561,12 +287,6 @@ input[type="submit"]:focus { background: #FF5400; }
 
 .article { margin-bottom: 30px; }
 
-.map,
-.tiger
-/*#petition .content*/ {
-	padding-top: 75px;
-	position: relative;
-}
 
 #home ./*hentry*/ {
 	border-top: 1px solid #2F271C;
@@ -578,10 +298,10 @@ input[type="submit"]:focus { background: #FF5400; }
 	border-top: 0;
 	padding-top: 0;
 }
-/* @end -global */
+/* end  */
 
 
-/* @group -HEADER
+/* HEADER
 ------------------------------------------------------------------------------------------*/
 #header {
 	background: #1E1913 url("../images/image.jpg") no-repeat center 180px;
@@ -613,10 +333,10 @@ input[type="submit"]:focus { background: #FF5400; }
 	padding-top: 30px;
 	width: 380px;
 }
-/* @end -header */
+/* header */
 
 
-/* @group -navbar
+/* navbar
 ------------------------------------------------------------------------------------------*/
 #navbar {
 	background: #F90;
@@ -672,13 +392,19 @@ input[type="submit"]:focus { background: #FF5400; }
 	border-bottom: 1px solid #C93 !important;
 }
 
+.carousel-inner>item>img, {
+	display: block;
+	line-height: 1;
+}
+
+img {margin: center; max-width:930px; height:580px;, float:left;}
 #navbar .navbarbar-new {
 	position: absolute;
 	left: -999em;	
 	width: 100%;
 }
 
-#navbar .navbarbar-new,
+#navbar .navbar-new,
 #navbar li.plus:hover { background: #FB4; }
 
 #navbar .navbarbar-new li {
@@ -709,10 +435,10 @@ input[type="submit"]:focus { background: #FF5400; }
 #navbar .hover .navbarbar-new {
 	left: auto;
 }
-/* @end -navbar */
+/* navbar */
 
 
-/* @group -FOOTER
+/* FOOTER
 ------------------------------------------------------------------------------------------*/
 #navbar-secondary,
 #navbar-secondary ul { overflow: hidden; }
@@ -732,252 +458,7 @@ input[type="submit"]:focus { background: #FF5400; }
 	padding-right: 10px;
 }
 
-/* ADOPT */
-#adopt {
-	font-size: 16px;
-	margin-top: 40px;
-}
-
-#adopt a {
-	background: #15110C;
-	color: #FFF;
-	padding: 20px 0 20px 20px;
-	text-decoration: none;
-}
-
-#adopt a,
-#adopt span { display: block; }
-
-#adopt span {
-	display: inline;
-	float: right;
-	height: 77px;
-	margin: -28px 15px 0 0;
-	width: 79px;
-}
-
-#adopt strong {
-	background: url("../img/arrow_orange.gif") no-repeat right center;
-	color: #F90;
-	padding-right: 25px;
-}
-
-#adopt a:hover,
-#adopt a:focus {
-	background: #F90;
-	color:#15110C;
-}
-
-#adopt a:hover strong,
-#adopt a:focus strong {
-	background: url("../img/arrow_white.gif") no-repeat right center;
-	color: #FFF;
-}
-
-/* SOCIAL */
-.social ul {
-	list-style: none;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-}
-
-.social li {
-	display: inline;
-	float: left;
-	margin-right: 10px;
-}
-
-.social a {
-	background: url("../img/sprite_social.gif") no-repeat;
-	display: block;
-	height: 20px;
-	overflow: hidden;
-	text-indent: -999em;
-	width: 20px;
-}
-
-.social .planete-attitude a	{ background-position: -10px -10px; }
-.social .facebook a			{ background-position: -40px -10px; }
-.social .twitter a			{ background-position: -70px -10px; }
-.social .flickr a			{ background-position: -100px -10px; }
-
-.social .planete-attitude a:hover,
-.social .planete-attitude a:focus { background-position: -10px -40px; }
-
-.social .facebook a:hover,
-.social .facebook a:focus { background-position: -40px -40px; }
-
-.social .twitter a:hover,
-.social .twitter a:focus { background-position: -70px -40px; }
-
-.social .flickr a:hover,
-.social .flickr a:focus { background-position: -100px -40px; }
-/* @end -footer */
-
-/* @end layout */
-
-
-/* @group MODS
-----------------------------------------------------------------------------------------------------*/
-
-/* @group -ACTIONS
-------------------------------------------------------------------------------------------*/
-
-/* LAYOUT */
-#actions { color: #221; }
-
-#actions,
-#actions ol,
-#actions ul { list-style: none; margin: 0; padding: 0; }
-
-#intro #actions { margin-top: -300px; }
-
-.ie6 #actions { position: relative; }
-
-.ie6 #actions li, .ie7 #actions li,
-.ie6 #actions ol, .ie7 #actions ol { height: 1%; }
-
-#actions p { clear: both; }
-
-#actions .donate { margin-bottom: 20px; }
-
-#actions .content { padding: 20px 20px 7px; }
-
-#actions .petition .content	{ background: #E6E4D8; }
-#actions .donate .content	{ background: #D9D4BE; }
-#actions .share .content	{ background: #CBC5AB; padding-bottom:  20px; }
-
-/* PAGE ALT LAYOUT */
-.page #actions,
-.page #actions ol {
-	overflow: hidden;
-	position: relative;
-}
-
-.page #actions li		{ display: inline; float: left; width: 31.25%; }
-.page #actions .donate	{ left: 3.2%; position: relative; }
-.page #actions .share	{ float: right; }
-
-.page #actions .content {
-	margin: 0 0 -1000px;
-	padding-bottom: 1000px;
-	position: relative;
-}
-
-.page #actions .share .content { padding-bottom: 1020px; }
-
-
-/* BUTTON GLOBAL */
-a.button {
-	background: #BBB4AC;
-	color: #FFF;
-	cursor: pointer;
-	display: block;
-	font: 18px/42px CodeBoldRegular, Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-	letter-spacing: 1px;
-	margin: 0 3px 13px 0;
-	text-align: center;
-	text-decoration: none;
-}
-
-a.button span {
-	background: #F90;
-	color: #FFF;
-	display: block;
-	position: relative;
-	top: -3px;
-	left: 3px;
-	z-index:2;
-}
-
-.ie6 a.button span,
-.ie7 a.button span { height: 1%; }
-
-a.button:hover span,
-a.button:focus span { background:  #FFBB44; }
-
-
-/* DONATE BUTTON */
-#actions .donate a.button		{ background:  #BBB4AA; }
-#actions .donate a.button span	{ background:  #FF5400; }
-
-#actions .donate a.button:hover span,
-#actions .donate a.button:focus span { background:  #FF6B22; }
-
-/* SHARE BUTTON */
-#actions .share { overflow: hidden; }
-
-.ie6 #actions .share ul,
-.ie7 #actions .share ul { height: 1%; }
-
-#actions .share li {
-	display: inline;
-	float: left;
-	padding: 0;
-	width: 49.9%;
-}
-
-#actions .share .button {
-	font-size: 14px;
-	line-height: 37px;
-	text-align: left;
-}
-
-#actions .share .facebook .button	{ margin-right: 8px; }
-#actions .share .twitter .button	{ margin-left: 5px; }
-
-#actions .share .facebook span	{ background: url("../img/share.png") no-repeat 10px center #3B5998; padding-left: 26px; }
-#actions .share .twitter span	{ background: url("../img/retweet.png") no-repeat 10px center #4099FF; padding-left: 35px; }
-
-#actions .share .facebook a:hover span,
-#actions .share .facebook a:focus span { background-color: #2B416F; }
-
-#actions .share .twitter a:hover span,
-#actions .share .twitter a:focus span { background-color: #1783FF; }
-
-/* AVATAR */
-#actions .avatar {
-	background: #BBB4AC;
-	margin: 0 3px 0 0;
-}
-
-#actions .avatar a {
-	background: #1E1913;
-	color: #FFF;
-	text-decoration: none;
-}
-
-#actions .avatar a,
-#actions .avatar span { display: block; }
-
-#actions .avatar a {
-	left: 3px;
-	overflow: hidden;
-	padding: 7px;
-	position: relative;
-	top: -3px;
-}
-
-.ie6 #actions .avatar a,
-.ie7 #actions .avatar a { height: 1%; }
-
-#actions .avatar a:hover {
-	background: #F90;
-	color: #221;
-}
-
-#actions .avatar span {
-	display: inline;
-	float: left;
-	height: 75px;
-	margin: 0 10px 0 0;
-	width: 75px;
-}
-/* @end -actions */
-
-
-/* @group -CHART
+/* Timeline
 ------------------------------------------------------------------------------------------*/
 #chart {
 	background: #CBC5AB;
@@ -1095,79 +576,7 @@ a.button:focus span { background:  #FFBB44; }
 	right: 10px;
 	z-index: 99;
 }
-/* @end -chart */
 
-/* @end mods */
-
-
-/* @group OVERRIDE
-----------------------------------------------------------------------------------------------------*/
-#more ol,
-#infos ul { list-style: none; margin: 0; padding: 0; }
-
-#infos li			{ display: inline; float: left; width: 31.25%; }
-#infos .secondary	{ left: 3.2%; position: relative; }
-#infos .tertiary	{ float: right; }
-
-#infos h3 {
-	background: #0E0B09;
-	display: block;
-	margin-bottom: 0;
-}
-
-#infos h3 strong {
-	background: url("../img/arrow_white.gif") no-repeat scroll right 50% #F90;
-	font-weight: normal;
-	padding: 6px 25px 4px 15px;
-	position: absolute;
-	top: 10px;
-	left: -10px;
-}
-
-#infos a {
-	background: #CBC5AB;
-	border: 0 !important;
-	color: #FFF !important;
-	display: block;
-	position: relative;
-	text-decoration: none;
-}
-
-#infos a:hover strong,
-#infos a:focus strong { background-color: #FF5400; }
-
-#videos {
-	background: #F90;
-	border-bottom: 3px solid #15110C;
-}
-
-.video-content {
-	display: block;
-	height: 190px;
-	padding: 7px;
-}
-/* @end override */
-
-
-/* @group MEDIA QUERIES
-----------------------------------------------------------------------------------------------------*/
-
-/* @group -900PX
-------------------------------------------------------------------------------------------*/
-@media (max-width: 900px) {
-	
-	#actions .button { font-size: 14px; }
-	
-	#actions .share li {
-		display: block !important;
-		float: none !important;
-		width: 100% !important;
-	}
-	
-	#actions .share .facebook .button { margin-right: 3px; }
-	#actions .share .twitter .button { margin-left: 0; }
-}
-/* @end -900px */
 
 
 /* @group -860PX
@@ -1192,9 +601,22 @@ a.button:focus span { background:  #FFBB44; }
 	
 	#me img,
 	#logo img { height: auto; width: 100%; }
-	/* @end --header */
+	/* header */
+
+	@media (max-width: 860px) {
 	
-	/* @group --navbar
+	/* mycrousel
+	-------------------------------------*/
+	#myCarousel
+	
+		{ left: 10px; width: 80px; 
+		 margin-left: 30%; padding-top: 15px; width: 320px; }
+	
+	 img,
+	img { height: auto; width: 100%; }
+	/* mycarousel */
+	
+	/* navbar
 	-------------------------------------*/
 	#navbar {
 		margin-top: 15px;
@@ -1228,23 +650,15 @@ a.button:focus span { background:  #FFBB44; }
 		border-top: 1px solid #FC7;
 		border-bottom: 1px solid #C93 !important;	
 	}
-	/* @end --navbar */
+	/* navbar */
 	
-	/* @group --LAYOUT
+	/* LAYOUT
 	-------------------------------------*/
 	#intro .primary,
 	#intro .secondary,
 	#more .primary,
 	#more .secondary,
-	#blog #main .primary,
-	#blog #main .secondary,
-	#blog-single #main .primary,
-	#blog-single #main .secondary,
-	#petition #main .primary,
-	#petition #main .secondary,
-	#menaces #main .primary,
-	#pourquoi #main .primary,
-	#actions-wwf #main .primary {
+	 {
 		display: block;
 		float: none;
 		width: auto;
@@ -1252,57 +666,7 @@ a.button:focus span { background:  #FFBB44; }
 	
 	#intro .primary { padding-bottom: 20px; }
 	#more .primary	{ padding-bottom: 40px; }
-	#petition #main .primary { padding: 0 20px 10px 0; }
 	
-	#intro #actions { margin-top: 0; overflow: hidden; }
-	
-	#intro #actions li		{ display: inline; float: left; width: 31.25%; }
-	#intro #actions .donate { left: 3.2%; position: relative; }
-	#intro #actions .share	{ float: right; }
-	
-	#intro #actions li .content,		
-	.page #actions li .content		{ margin-bottom: -1000px; padding: 10px 10px 1000px; }
-	#intro #actions .share .content { padding-bottom: 1020px; }
-	
-	#home ./*hentry*/ { margin-right: 0; }
-	
-	#videos,
-	#adopt { float: left; width: 45%; }
-	#adopt { float: right; }
-	
-	#petition fieldset {
-		margin: 0 20px 20px;
-		position: static;
-	}
-	/* @end --layout */
-	
-	#menaces .figure,
-	#pourquoi .figure,
-	#actions-wwf .figure {
-		z-index: 99;
-	}
-	
-	#menaces .push-right,
-	#pourquoi .push-right,
-	#actions-wwf .push-right {
-		margin-right: -34px !important;
-		margin-left: 20px;
-		right: 0;
-		width: 48%;
-	}
-	
-	#menaces .push-left,
-	#pourquoi .push-left,
-	#actions-wwf .push-left { left: 0; }
-	
-	#pourquoi .push-right { margin-top: -8px !important; }
-	
-	#menaces .figure img,
-	#pourquoi .figure img,
-	#actions-wwf .figure img { margin: 0 auto; }
-}
-/* @end -860px */
-
 
 @media (max-width: 600px) {
 	
@@ -1319,6 +683,8 @@ a.button:focus span { background:  #FFBB44; }
 	
 	#me { height: 80px; width: 50px; }
 	#logo { height: 80px; margin-left: 25%; padding-top: 15px; width: 200px; }
+
+	.myCarousel { height: 80px; margin-left: 25%; padding-top: 15px; width: 200px; }
 	
 	#navbar { margin: 0; width: 100%; }
 	#navbar a { text-align:center; }
@@ -1326,8 +692,8 @@ a.button:focus span { background:  #FFBB44; }
 	.primary,
 	.secondary,
 	.tertiary {
-		display: block;
-		float: none;
+		display: inline-block;
+		float: left;
 		width: auto !important;
 	}
 	
@@ -1343,68 +709,8 @@ a.button:focus span { background:  #FFBB44; }
 		display: none !important;
 	}
 	
-	#videos, #adopt {
-		float:none;
-		width: auto;
-	}
-	
-	#videos { margin: 0 20px; }
-	
-	#main,
-	#more { padding-bottom: 0; }
-	
-	#sidebar { padding: 20px 20px 0; }
-	
-	.page-title { margin-bottom: 30px; }
 	
 	.article { margin-bottom: 10px; }
 	.article:last-child { margin-bottom: 0; }
 	
-	.figure {
-		display: block;
-		float: none;
-		margin: 0 auto 20px !important;
-		position: static;
-		width: auto !important;
-	}
 	
-	#menaces .push-right,
-	#pourquoi .push-right,
-	#actions-wwf .push-right {
-		margin: 0 auto 20px !important;
-	}
-	
-	.tiger .figure,
-	.map .figure {
-		margin: 0 20px 20px !important;
-		padding: 7px;
-		position: static;
-	}
-	
-	.tiger .figure img,
-	.map .figure img { margin: 0 auto; }
-	
-	#intro #actions li {
-		display: block;
-		float: none;
-		margin-bottom: 0;
-		width: 100%;
-	}
-	
-	#intro #actions .donate { position: static; }
-	#intro #actions li .content { margin: 0; padding: 20px 20px 7px; }
-	#intro #actions .share .content { padding-bottom:  20px; }
-	
-	#petition .content {
-		padding: 0;	
-	}
-	
-	#petition fieldset {
-		margin: 0;
-	}
-	
-	#navbar-secondary {
-		margin: 0 20px;
-	}
-}
-/* @end media queries */

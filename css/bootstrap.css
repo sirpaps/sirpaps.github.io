@@ -1,4 +1,4 @@
-/*!
+ca/*!
  * Bootstrap v3.0.0
  *
  * Copyright 2013 Twitter, Inc
@@ -350,7 +350,7 @@ img {
   max-width: 100%;
 }
 
-.img-rounded {
+/*.img-rounded {
   border-radius: 6px;
 }
 
@@ -387,7 +387,7 @@ hr {
   overflow: hidden;
   clip: rect(0 0 0 0);
   border: 0;
-}
+}*/
 
 p {
   margin: 0 0 10px;
