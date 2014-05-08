@@ -44,7 +44,7 @@ p {
 }
 
 a {
-    color: black;
+    color: white;
 
     -/*webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .light {
@@ -141,7 +141,7 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: black;
+    color: white;
     /*background-image: url(/home/sirkingsley/Documents/chillax_webapp/grayscale/img/intro-bg.jpg); no-repeat bottom center scroll;*/
     /*background-color: #11659d;*/
     -webkit-background-size: cover;
@@ -221,7 +221,7 @@ a:focus {
     border:1px solid black;
     margin:0 18px 17px 0;
     text-align: center;
-   /* background-color: #11659d;*/
+   background-color: black;
     list-style: none;
     list-style-image: none;
 }
